@@ -1,7 +1,7 @@
 import sys
 import subprocess
 
-print("Please enter your selection ")
+print("Please enter your selection: ")
 print("1. Beginner")
 print("2. Intermediate")
 print("3. Advanced")
@@ -13,23 +13,23 @@ while uInput != "6":
 #UI calls Service to start quiz screen
         uInput = input("your choice: ")
         if (uInput == str(1)):
-                print("You will be navigated to the Beginner level")
+                print("You will be navigated to the Beginner level.")
                 theproc = subprocess.Popen([sys.executable, "beginner.py"])
                 theproc.communicate()
         elif (uInput == str(2)):
-                print("You will be navigated to the Intermediate level")
+                print("You will be navigated to the Intermediate level.")
                 theproc = subprocess.Popen([sys.executable, "intermediate.py"])
                 theproc.communicate()
         elif (uInput == str(3)):
-                print("You will be navigate to the Advanced level")
+                print("You will be navigate to the Advanced level.")
                 theproc = subprocess.Popen([sys.executable, "advanced.py"])
                 theproc.communicate()
         elif (uInput == str(4)):
-                print("You will be returned to the Main menu")
+                print("You will be returned to the Main menu.")
                 theproc = subprocess.Popen([sys.executable, "mainUI.py"])
                 theproc.communicate()
         elif (uInput == str(5)):
-                print("You will be navigate to the About program information")
+                print("You will be navigate to the About program information.")
                 file = open('aboutProgram.txt', 'r')
                 content = file.read()
                 print(content)

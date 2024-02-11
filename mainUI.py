@@ -5,13 +5,12 @@ from pathlib import Path
 import sys
 import subprocess
 
-print("Hello Welcome to the Japanese Vocabulary quiz program. \n")
+print("Hello Welcome to the Japanese Vocabulary Quiz program. \n")
 
 uInput = ' '
 print("Please enter 1 if you want to try or 2 to quit. 3 for the information on this program.\n")
 while uInput != '2':
          uInput = input("your choice: ")
-         #UI calls Service to start quiz screen
          if (uInput == str(1)):
             print("You will be navigated to the start quiz screen")
             theproc = subprocess.Popen([sys.executable, "quizUI1.py"])
