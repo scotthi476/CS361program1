@@ -1,0 +1,10 @@
+This quiz program is designed to learn Japanese vocabulary.
+The quiz format is a multiple-choice format.  You are provided a Japanese word
+written in Japanese and 4 options in English.  You are going to select a correct English
+option for the given Japanese word.  There are 3 levels for this quiz, the beginner level,
+the intermediate level, and the advanced level. At the beginner level, a Japanese word is
+given in Hiragana.  At the intermediate level, Japanese word is given in both Hiragana
+and Katakana.  At the advanced level, the Japanese word includes Kanji characters.
+Once you enter your selection and enter, then the correct answer will be displayed.
+There will be 20 questions for each level, and at the end of the quiz set,
+your total score will be displayed.
