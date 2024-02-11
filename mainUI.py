@@ -2,6 +2,8 @@ import os.path
 import time
 import random
 from pathlib import Path
+import sys
+import subprocess
 
 print("Hello Welcome to the Japanese Vocabulary quiz program. \n")
 
@@ -12,6 +14,8 @@ while uInput != '2':
          #UI calls Service to start quiz screen
          if (uInput == str(1)):
             print("You will be navigated to the start quiz screen")
+            theproc = subprocess.Popen([sys.executable, "quizUI1.py"])
+            theproc.communicate()
          elif (uInput == str(2)):
             print("Quit this program")
             exit()
