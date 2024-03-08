@@ -15,12 +15,13 @@ with open("rating.txt", "r+") as f:
     print("Rating Entered:" + rating)
     f.close()
 
-#Execute searchRecipeRating.py service
-
 print("Search Service is generating the result.")
 print("Press enter 1 to see the search result. Enter 2 to quit.")
 uInput = input()
 if (uInput == str(1)):
+    theproc = subprocess.Popen([sys.executable, "ratingSearchService.py"])
+    theproc.communicate()
+    time.sleep(3)
     file3 = open("searchResult.txt", "r+")
     print("Search Result:")
     data = file3.read()
@@ -47,6 +48,11 @@ elif (uInput == str(2)):
     exit()
 else:
     print("unknown option")
+
+
+
+
+
 
 
 

@@ -66,8 +66,6 @@ while True:
         with open("SearchResult.txt") as f:
             f = open("searchResult.txt", "r+")
             line = f.read()
-            print("Search completed. Result:")
-            print(line)
             f.close()
     else:
         print("incorrect option")
