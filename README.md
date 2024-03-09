@@ -11,6 +11,6 @@ Microservice request data and receive data Workflow:
  (6) ratingSearchService.py is executed
 
 List of functions:
-convert_rating_int(rating)
-search_recipe_rating(directory, key)
-write_result(file, list)
+(1) convert_rating_int(rating)
+(2) search_recipe_rating(directory, key)
+(3) write_result(file, list)
